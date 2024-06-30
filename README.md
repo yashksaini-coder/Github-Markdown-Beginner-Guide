@@ -100,7 +100,7 @@ Let's add an image. Include descriptive text in the square brackets. This text i
   Define terms and link to docs.github.com.
 -->
 
-<details id=3 open>
+<details id=3>
 <summary><h2>Step 3: Add a code example</h2></summary>
 
 _Great job adding an image to the file :tada:_
@@ -139,7 +139,7 @@ Initialized empty Git repository in /Users/skills/Projects/recipe-repository/.gi
   Define terms and link to docs.github.com.
 -->
 
-<details id=4>
+<details id=4 open>
 <summary><h2>Step 4: Make a task list</h2></summary>
 
 _Great job adding a code example to the file :partying_face:_
