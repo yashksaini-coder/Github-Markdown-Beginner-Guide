@@ -8,3 +8,9 @@
 $ git init
 Initialized empty Git repository in /Users/skills/Projects/recipe-repository/.git/
 ```
+
+## This is the Task list
+
+- [ ] Productive box is required in README
+- [x] Add social card to Leetcode
+- [ ] Don't know anything about this item
