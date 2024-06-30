@@ -67,7 +67,7 @@ _Welcome to "Communicate using Markdown"! :wave:_
   Define terms and link to docs.github.com.
 -->
 
-<details id=2 open>
+<details id=2>
 <summary><h2>Step 2: Add an image</h2></summary>
 
 _Great job adding headers to the file :sparkles:_
@@ -100,7 +100,7 @@ Let's add an image. Include descriptive text in the square brackets. This text i
   Define terms and link to docs.github.com.
 -->
 
-<details id=3>
+<details id=3 open>
 <summary><h2>Step 3: Add a code example</h2></summary>
 
 _Great job adding an image to the file :tada:_
