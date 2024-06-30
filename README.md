@@ -17,7 +17,7 @@ _Organize ideas and collaborate using Markdown, a lightweight language for text 
   Encourage users to open new tabs for steps!
 -->
 
-<details id=1 open>
+<details id=1>
 <summary><h2>Step 1: Add headers</h2></summary>
 
 _Welcome to "Communicate using Markdown"! :wave:_
@@ -67,7 +67,7 @@ _Welcome to "Communicate using Markdown"! :wave:_
   Define terms and link to docs.github.com.
 -->
 
-<details id=2>
+<details id=2 open>
 <summary><h2>Step 2: Add an image</h2></summary>
 
 _Great job adding headers to the file :sparkles:_
