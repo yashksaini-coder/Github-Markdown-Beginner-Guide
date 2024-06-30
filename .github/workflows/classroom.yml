@@ -1,0 +1,75 @@
+name: Autograding Tests
+'on':
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Step 1 Add Headers
+      id: step-1-add-headers
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Step 1 Add Headers
+        setup-command: sleep 20
+        command: "[ $(cat .github/script/STEP) -ge 1 ] || [ $(cat .github/script/STEP)
+          = X ]"
+        timeout: 10
+        max-score: 1
+    - name: Step 2 Add an image
+      id: step-2-add-an-image
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Step 2 Add an image
+        setup-command: sleep 20
+        command: "[ $(cat .github/script/STEP) -ge 2 ] || [ $(cat .github/script/STEP)
+          = X ]"
+        timeout: 10
+        max-score: 1
+    - name: Step 3 Add a code example
+      id: step-3-add-a-code-example
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Step 3 Add a code example
+        setup-command: sleep 20
+        command: "[ $(cat .github/script/STEP) -ge 3 ] || [ $(cat .github/script/STEP)
+          = X ]"
+        timeout: 10
+        max-score: 1
+    - name: Step 4 Make a task list
+      id: step-4-make-a-task-list
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Step 4 Make a task list
+        setup-command: sleep 20
+        command: "[ $(cat .github/script/STEP) -ge 4 ] || [ $(cat .github/script/STEP)
+          = X ]"
+        timeout: 10
+        max-score: 1
+    - name: Step 5 Merge your pull request
+      id: step-5-merge-your-pull-request
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Step 5 Merge your pull request
+        setup-command: sleep 20
+        command: "[ $(cat .github/script/STEP) -ge 5 ] || [ $(cat .github/script/STEP)
+          = X ]"
+        timeout: 10
+        max-score: 1
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        STEP-1-ADD-HEADERS_RESULTS: "${{steps.step-1-add-headers.outputs.result}}"
+        STEP-2-ADD-AN-IMAGE_RESULTS: "${{steps.step-2-add-an-image.outputs.result}}"
+        STEP-3-ADD-A-CODE-EXAMPLE_RESULTS: "${{steps.step-3-add-a-code-example.outputs.result}}"
+        STEP-4-MAKE-A-TASK-LIST_RESULTS: "${{steps.step-4-make-a-task-list.outputs.result}}"
+        STEP-5-MERGE-YOUR-PULL-REQUEST_RESULTS: "${{steps.step-5-merge-your-pull-request.outputs.result}}"
+      with:
+        runners: step-1-add-headers,step-2-add-an-image,step-3-add-a-code-example,step-4-make-a-task-list,step-5-merge-your-pull-request
