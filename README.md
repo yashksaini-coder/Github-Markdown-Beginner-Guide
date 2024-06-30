@@ -1,253 +1,114 @@
-<!--
-  <<< Author notes: Header of the course >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
--->
+# GitHub Markdown Beginner Guide 📘
 
-# Communicate using Markdown
+## Introduction 🚀
+GitHub Markdown is a lightweight and easy-to-use syntax for styling your writing on GitHub. This guide will introduce you to the basics of Markdown so you can start documenting your projects like a pro!
 
-_Organize ideas and collaborate using Markdown, a lightweight language for text formatting._
+## Basic Syntax 📝
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+### Headings 🏷️
+Create headings by starting a line with `#`. Add more `#` for subheadings:
 
-<details id=1>
-<summary><h2>Step 1: Add headers</h2></summary>
-
-_Welcome to "Communicate using Markdown"! :wave:_
-
-**What is _Markdown_?** Markdown is a [lightweight syntax](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for communicating on GitHub. You can format text to add heading, lists, **bold**, _italics_, tables, and many other stylings. You can use Markdown most places around GitHub:
-
-- Comments in [issues](https://docs.github.com/issues/tracking-your-work-with-issues/about-issues), [pull requests](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), and [discussions](https://docs.github.com/discussions/collaborating-with-your-community-using-discussions/about-discussions)
-- Files with the `.md` or `.markdown` extension
-- Sharing snippets of text in [Gists](https://docs.github.com/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
-
-**What is a _header_?** A header is a larger bit of text at the beginning of a section. There are six sizes.
-
-### Example
-
-```md
-# This is an `<h1>` header, which is the largest
-## This is an `<h2>` header
-###### This is an `<h6>` header, which is the smallest
+```markdown
+# This is an H1
+## This is an H2
+### This is an H3
 ```
 
-#### How it looks
+### Emphasis ✨
+Add **bold** or *italic* text:
 
-# This is an `<h1>` header, which is the largest
-## This is an `<h2>` header
-###### This is an `<h6>` header, which is the smallest
-
-### :keyboard: Activity: Edit your file with headers
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Open the **pull requests** tab.
-1. Click **New pull request**, for the branches to compare, select `base: main` and `compare: start-markdown`.
-1. Click **Create pull request**.
-1. In this pull request, go to the **Files changed** tab. We made an empty file `index.md` for you.
-1. Select **Edit file** from the three dotted **...** menu in the upper right corner of the file view on `index.md`.
-1. On the **Edit file** tab, add a `#`, followed by a **space**, before any content you like to make it an H1 Header. You can add more headers, using one to six `#` characters followed by a **space**.
-1. Above your new content, click **Preview**.
-1. Type a short, meaningful commit message that describes the change you made to the file.
-1. Select Commit directly to the start-markdown branch.
-1. Click **Commit changes**.
-1.  Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
--->
-
-<details id=2>
-<summary><h2>Step 2: Add an image</h2></summary>
-
-_Great job adding headers to the file :sparkles:_
-
-Let's add an image. Include descriptive text in the square brackets. This text is read aloud for people using screen readers. It's also shown at times when your image doesn't display, such as when there's a poor connection. You can see the syntax for images below:
-
-### Example
-
-```md
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+```markdown
+**This text is bold**
+*This text is italic*
 ```
 
-#### How it looks
+### Lists 📋
+- **Unordered lists:** Use `-`, `+`, or `*`:
 
-<img alt="Image of Yaktocat" src=https://octodex.github.com/images/yaktocat.png width=400>
-
-### :keyboard: Activity: Adding an image
-
-1. As you did before, edit the `index.md` file in this pull request.
-1. In the file, add the correct Markdown for your image of choice. Don't forget to include alt-text!
-1. Use the **Preview** tab to check your Markdown formatting.
-1. Commit your changes.
-1. Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--
-  <<< Author notes: Step 3 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
--->
-
-<details id=3>
-<summary><h2>Step 3: Add a code example</h2></summary>
-
-_Great job adding an image to the file :tada:_
-
-In addition to code blocks, some code blocks should be rendered differently depending on the language, such as JavaScript or command-line text.
-
-### Example
-
-<pre>
-```
-$ git init
-Initialized empty Git repository in /Users/skills/Projects/recipe-repository/.git/
-```
-</pre>
-
-#### How it looks
-
-```
-$ git init
-Initialized empty Git repository in /Users/skills/Projects/recipe-repository/.git/
+```markdown
+- Item 1
+- Item 2
+  - Subitem 1
+  - Subitem 2
 ```
 
-### :keyboard: Activity: Adding a code example
+- **Ordered lists:** Use numbers:
 
-1. As you did before, edit the file in this pull request.
-1. In the file, add the correct Markdown for a code example of your choice.
-1. Use the **Preview** tab to check your Markdown formatting.
-1. Commit your changes.
-1. Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--
-  <<< Author notes: Step 4 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
--->
-
-<details id=4>
-<summary><h2>Step 4: Make a task list</h2></summary>
-
-_Great job adding a code example to the file :partying_face:_
-
-**What is a _task list_?** A task list creates checkboxes to check off. They're very useful for tracking issues and pull requests. If you include a task list in the body of an issue or pull request, you'll see a progress indicator in your issue list. The syntax for task lists is very specific. Be sure to include the spaces where required, or else they won't render.
-
-### Example
-
-```
-- [x] List syntax is required
-- [x] This item is complete
-- [ ] This item is not complete
+```markdown
+1. Item 1
+2. Item 2
+   1. Subitem 1
+   2. Subitem 2
 ```
 
-#### How it looks
+### Links 🔗
+Create links by wrapping the link text in `[ ]` and the URL in `( )`:
 
-- [x] List syntax is required
-- [x] This item is complete
-- [ ] This item is not complete
+```markdown
+[GitHub](https://github.com)
+```
 
-### :keyboard: Activity: Add a task list
+### Images 🖼️
+Add images similarly to links, but start with `!`:
 
-GitHub Actions went ahead and made a branch for you. So you'll need to add to the file we've created in the branch, and we will check your work as you work through this course!
+```markdown
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+```
 
-1. Return to your pull request.
-1. Use Markdown to create a task list. Here is an example:
+### Blockquotes 💬
+Create blockquotes using `>`:
 
-   ```md
-   - [ ] Turn on GitHub Pages
-   - [ ] Outline my portfolio
-   - [ ] Introduce myself to the world
-   ```
+```markdown
+> This is a blockquote
+```
 
-   Remember, a task list starts with the syntax `- [ ]` and then the task list item. The formatting is specific!
+### Code ⌨️
+Inline code uses backticks:
 
-1. Use the **Preview** tab to check your Markdown formatting.
-1. Commit the changes to the file.
-1. Wait about 20 seconds then refresh this page for the next step.
+```markdown
+`inline code`
+```
 
-</details>
+Code blocks use triple backticks:
 
-<!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
--->
+```
+code block
+```
 
-<details id=5>
-<summary><h2>Step 5: Merge your pull request</h2></summary>
+## Advanced Syntax 🚀✨
 
-_Great job adding a task list to the file :heart:_
+### Tables 📊
+Create tables using `|` to separate columns and `-` to separate the header row from the data rows:
 
-You can now [merge](https://docs.github.com/get-started/quickstart/github-glossary#merge) your pull request!
+```markdown
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1    | Data 1   |
+| Row 2    | Data 2   |
+```
 
-### :keyboard: Activity: Merge your pull request
+### Task Lists ✅
+Create task lists using `- [ ]` for unchecked items and `- [x]` for checked items:
 
-1. Under your repository name, click Pull requests.
-   ![repo-tabs-pull-requests](https://github.com/Exp-Communicate-Using-Markdown-Cohort-1/series-communicate-using-markdown/assets/107881423/a5351683-be08-4f46-83b4-864dae00c70a)
+```markdown
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
+```
 
-1. In the “Pull Requests” list, click the pull request you’d like to merge.
-1. Scroll down to the bottom of the pull request Click **Merge pull request**.
-   ![merge PR](https://github.com/Exp-Communicate-Using-Markdown-Cohort-1/series-communicate-using-markdown/assets/107881423/7dfd1089-7ad1-4e49-b18b-e2630d05cf14)
+### Strikethrough ❌
+Strikethrough text using `~~`:
 
-1. Wait about 20 seconds then refresh this page for the next step.
+```markdown
+~~This was a mistake~~
+```
 
-</details>
+### Emojis 😄
+Add emojis using `:emoji_name:`:
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+```markdown
+:smile: :rocket: :tada:
+```
 
-<details id=X open>
-<summary><h2>Finish</h2></summary>
-
-_Congratulations friend, you've completed this course!_
-
-<img src=https://octodex.github.com/images/welcometocat.png alt=celebrate width=300 align=right>
-
-Here's a recap of all the tasks you've accomplished in your repository:
-
-1. You learned about Markdown, headings, images, code examples, and task lists.
-1. You created and merged a Markdown file.
-1. You learned an essential GitHub skill. 🎉
-
-### What's next?
-
-- You can enable GitHub Pages and see your Markdown file as a website!
-  1. Under your repository name at the upper right, click :gear: **Settings**.
-  1. Then on the lower left, click **Pages** in the **Code and automation** section.
-  1. In the **GitHub Pages** section, ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu as your GitHub Pages publishing source.
-  1. Click the **Save** button.
-  1. Wait about 30 seconds then refresh the page. When you see "Your site is published at ..." you can click on the link to see your published site.
-- Learn more about [Markdown](https://docs.github.com/github/writing-on-github).
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions)
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-</details>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/community/discussions/categories/github-education) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2022 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## Conclusion 🎉
+With this guide, you should have a solid foundation in GitHub Markdown. Happy documenting! 🥳
