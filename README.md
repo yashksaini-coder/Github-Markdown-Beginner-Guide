@@ -187,7 +187,7 @@ GitHub Actions went ahead and made a branch for you. So you'll need to add to th
   Define terms and link to docs.github.com.
 -->
 
-<details id=5 open>
+<details id=5>
 <summary><h2>Step 5: Merge your pull request</h2></summary>
 
 _Great job adding a task list to the file :heart:_
@@ -212,7 +212,7 @@ You can now [merge](https://docs.github.com/get-started/quickstart/github-glossa
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-<details id=X>
+<details id=X open>
 <summary><h2>Finish</h2></summary>
 
 _Congratulations friend, you've completed this course!_
